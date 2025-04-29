@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+
+    <h1>LISTA DE TECNOLOGÍAS</h1>
+    <div>
+        <a id="uno" href="https://www.facebook.com/?locale2=es_LA&_rdr">Facebook</a>
+    </div>
+    <div>
+        <a id="dos" href="https://https://www.instagram.com/">Instagram</a>
+    </div>
+    <div>
+        <a id="tres" href="https://co.pinterest.com/">Pinterest</a>
+    </div>
+    <div>
+        <a id="cuatro" href="https://www.whatsapp.com/?lang=es">WhatsApp</a>
+    </div>
+    <div>
+        <a id="cinco" href="https://x.com/?lang=es">X</a>
+    </div>
+    <div>
+        <a id="seis" href="https://www.youtube.com/?app=desktop&hl=es">Youtube</a>
+    </div>
+    <div>
+        <a id="siete" href="https://github.com/">GitHUB</a>
+    </div>
+    <div>
+        <a id="ocho" href="https://excalidraw.com/">Excalidraw</a>
+    </div>
+    <div>
+        <a id="nueve" href="https://platzi.com/">Platzi</a>
+    </div>
+    <div>
+        <a id="diez" href="https://www.udemy.com/es/">Undemy</a>
+    </div>
+
+ 
+
+
+
+ 
+ 
+   
+
+
+
+    <script>
+        fetch(
+            "https://gist.githubusercontent.com/IsabelRuiz013/db30b1bcc86f6e55cf2f78edef0634ce/raw/c76a266e6b8fa3f82eeab6951e4293a7f115006a/tecnologias.json"
+        )
+
+        .then((res)=> res.json(   
+        ))
+        .then((res)=>{
+            document.getElementById("uno").textContent = res.uno;
+            console.log(res.uno)
+            document.getElementById("dos").textContent = res.dos;
+            console.log(res.dos)
+            document.getElementById("tres").textContent = res.tres;
+            console.log(res.tres)
+            document.getElementById("cuatro").textContent = res.cuatro;
+            console.log(res.cuatro)
+            document.getElementById("cinco").textContent = res.cinco;
+            console.log(res.cinco)
+            document.getElementById("seis").textContent = res.seis;
+            console.log(res.seis)
+            document.getElementById("siete").textContent = res.siete;
+            console.log(res.siete)
+            document.getElementById("ocho").textContent = res.ocho;
+            console.log(res.ocho)
+            document.getElementById("nueve").textContent = res.nueve;
+            console.log(res.nueve)
+            document.getElementById("diez").textContent = res.diez;
+            console.log(res.diez)
+        })
+    </script>
+</body>
+</html>
